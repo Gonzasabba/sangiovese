@@ -7,7 +7,8 @@
 /* ------------------- HEADER --------------- */
 
 header{
-    background-color: #cbaa8b;    
+    background-color: #cbaa8b; 
+    width: 100%;
     }
     
 div a {
@@ -58,7 +59,7 @@ main .main-contenido{
     width: 100%;
     height: 100vh;
     background-size: cover;
-    border: 3px solid white;
+    
 }
 
 .main-contenido-titulo{
@@ -89,16 +90,17 @@ main .main-contenido{
     margin: 10px;
     color: white;    
     width: 700px;
-    border: 2px solid white;
+    
 }
 
 .texto-nosotros h3{
-    font-size: 35px;    
+    font-size: 35px;
+        
 }
 
 .img-nosotros{
-    width: 450px;
-    height: 450px;    
+    width: 380px;
+    height: 380px;    
     margin: 10px;
     border: 3px solid white;  
     filter: contrast(0.8);
@@ -153,7 +155,7 @@ section div h2{
 
 div ul li{
     list-style: none;
-    padding: 1px;
+    padding: 8px;
     margin: 10px;
     text-align: center;
     justify-content: center;
@@ -352,6 +354,7 @@ footer div .logo2{
     margin: 2px;     
     border: 2px solid white;  
     color: white   
+    
 }
 
 .direccion {
@@ -376,7 +379,18 @@ footer div .logo2{
 
 /* --------- MEDIA QUERYS ----------- */   
 
-@media screen and (max-width: 1193px){
+
+
+@media screen and (max-width: 1370px) {    
+    .footer-contenido{
+        display: inline-block
+    }
+    .redes-logo{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1200px){
     header nav .header{
     
     height: 136px;
@@ -388,16 +402,7 @@ footer div .logo2{
     
 }
 
-@media screen and (max-width: 1370px) {    
-    .footer-contenido{
-        display: inline-block
-    }
-    .redes-logo{
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 1136px){
+@media screen and (max-width: 1140px){
     header nav .header{
         /*flex-direction: column;*/
         height: 136px;
@@ -408,7 +413,7 @@ footer div .logo2{
     }
 }
 
-@media screen and (max-width: 1063px){
+@media screen and (max-width: 1070px){
     header nav .header{
         flex-direction: column;
         height: auto;
@@ -438,6 +443,13 @@ footer div .logo2{
         font-size: 20px;
     }
 }
+
+@media screen and (max-width: 800px){
+    .grid-contenedor{
+        grid-column: 400px 400px;
+    }
+}
+
 @media screen and (max-width: 650px){
     .texto-nosotros {
         font-size: 15px;
@@ -451,6 +463,12 @@ footer div .logo2{
         height: 400px;  
     }
 }
+@media screen and (max-width: 600px){
+    section div div img{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 440px){
     .img-nosotros{
         width: 320px;
@@ -458,6 +476,12 @@ footer div .logo2{
         padding: 0;
         margin: 0;
     } 
+    .main-contenido-titulo{
+        font-size: 40px;
+    }
+    .main-contenido p{
+        font-size: 20px;
+    }
 }
 
 
@@ -470,8 +494,3 @@ footer div .logo2{
     }
 }
 
-@media screen and (max-width: 800px){
-    .grid-contenedor{
-        grid-column: 400px 400px;
-    }
-}
