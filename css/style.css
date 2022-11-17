@@ -493,5 +493,9 @@ footer div .logo2{
     .ubicacion{
         display: none;
     }
+    .grid-contenedor img{
+        width: 100vw;
+    }
+
 }
 
