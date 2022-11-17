@@ -89,9 +89,10 @@ main .main-contenido{
     padding: 20px;    
     margin: 10px;
     color: white;    
-    width: 700px;
-    
+    width: 700px; 
+    animation-duration: 5s;
 }
+
 
 .texto-nosotros h3{
     font-size: 35px;
@@ -104,6 +105,7 @@ main .main-contenido{
     margin: 10px;
     border: 3px solid white;  
     filter: contrast(0.8);
+    animation-duration: 5s;
 }
 
 /* --------------- MENU --------------- */
@@ -121,17 +123,18 @@ section div h2{
     padding: 30px;   
     text-align: center;
     background-color: #736759;
+    margin: 0px;
 }
 .menu{
     display: flex;         
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    height: 100%;
     padding: 15px;    
     font-family: 'Montserrat'; 
     background-color: #736759;
     flex-wrap: wrap;
-}
+    }
 
 .pasta-fresca{
     display: flex;
@@ -141,6 +144,7 @@ section div h2{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    animation-duration: 1.3s;
 }
 .pasta-fresca h3{
     font-size: 35px;    
@@ -151,6 +155,7 @@ section div h2{
     display: flex;
     margin: 15px;
     padding: 10px;
+    align-items: center;
 }
 
 div ul li{
@@ -170,6 +175,8 @@ div ul li{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    animation-duration: 1.3s;
+    animation-delay: 0.5s;
 }
 
 .panes h3{
@@ -181,6 +188,7 @@ div ul li{
     display: flex;    
     margin: 15px;
     padding: 10px;
+    align-items: center;
 }
 
 .dolce{
@@ -191,6 +199,8 @@ div ul li{
     flex-direction: column;    
     justify-content: center;
     text-align: center;
+    animation-duration: 1.3s;
+    animation-delay: 1s;
 }
 
 .dolce h3{
@@ -202,6 +212,7 @@ div ul li{
     display: flex;
     margin: 15px;
     padding: 10px;
+    align-items: center;
 }
 
 /* --------------- GALERIA --------------- */
@@ -217,8 +228,7 @@ div ul li{
 .grid-contenedor img{
     width: 100%;
     height: 400px;
-    object-fit: cover;
-    border: 2px solid white;
+    object-fit: cover;    
     filter: contrast(0.9);
 }
 /*
@@ -357,6 +367,14 @@ footer div .logo2{
     
 }
 
+.telefono h3{
+    font-size: 18px;
+}
+
+.telefono p{
+    margin: 2px;
+}
+
 .direccion {
     text-align: center;
     font-family: 'Montserrat';         
@@ -365,6 +383,13 @@ footer div .logo2{
     margin: 2px;   
     border: 2px solid white;  
     color: white       
+}
+
+.direccion h3{
+    font-size: 18px;
+}
+.direccion p{
+    margin: 2px;
 }
 
 .horarios {
@@ -377,6 +402,12 @@ footer div .logo2{
     color: white      
 }
 
+.horarios h3{
+    font-size: 18px;
+}
+.horarios p{
+    margin: 2px;
+}
 /* --------- MEDIA QUERYS ----------- */   
 
 
