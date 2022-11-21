@@ -447,6 +447,9 @@ footer div .logo2{
         width: 120px;
         height: 60px;        
     }
+    .nosotros{
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 1070px){
