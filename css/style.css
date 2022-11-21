@@ -494,6 +494,9 @@ footer div .logo2{
         width: 400px;
         height: 400px;  
     }
+    .main-contenido-titulo{
+        font-size: 50px;
+    }
 }
 @media screen and (max-width: 600px){
     section div div img{
