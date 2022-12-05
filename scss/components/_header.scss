@@ -1,0 +1,33 @@
+header{
+    background-color: #cbaa8b; 
+    width: 100%;
+    nav{
+        .header{
+            display: flex;       
+            font-family: 'Montserrat', sans-serif;    
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;        
+            padding: 5px;   
+            text-decoration: none;
+            flex-wrap: wrap;
+            a{
+                display: flex;
+                text-decoration: none;
+                padding: 3px;
+                margin: 0px 50px;   
+                list-style: none;  
+                text-transform: uppercase;
+                color: black;
+            }
+            .index-responsive{
+                display: none;
+            }
+            
+            .img-logo{
+                    width: 250px;
+                    height: 120px;    
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+@media screen and (max-width: 1370px) {    
+    .footer-contenido{
+        display: inline-block
+    }
+    .footer-contenido .redes-logo{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    header nav .header{
+    
+    height: 136px;
+    }
+    header nav .header .img-logo{
+        width: 150px;
+        height: 75px;        
+    }
+    
+}
+
+@media screen and (max-width: 1140px){
+    header nav .header{        
+        height: 136px;
+    }
+    header nav .header .img-logo{
+        width: 120px;
+        height: 60px;        
+    }
+    .nosotros{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    header nav .header{
+        flex-direction: column;
+        height: auto;
+    }
+    header nav .header .index-responsive{
+        display: block;
+    }
+    header nav .header .img-logo{
+        display: none;
+    }
+    header nav .header-index{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1010px){
+    section .menu{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 865px){
+    .main-contenido .main-contenido-titulo{
+        font-size: 60px;
+    }
+    .main-contenido p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .grid-contenedor{
+        grid-column: 400px 400px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .nosotros .texto-nosotros {
+        font-size: 15px;
+    }
+    
+    .nosotros .texto-nosotros h3{
+        font-size: 25px;    
+    }    
+    .nosotros .img-nosotros{
+        width: 400px;
+        height: 400px;  
+    }
+    .main-contenido .main-contenido-titulo{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 600px){
+    section .menu .pasta-fresca .pasta-fresca1 img{
+        display: none;
+    }
+    section .menu .panes .panes1 img{
+        display: none;
+    }
+    section .menu .dolce .dolce1 img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .nosotros .img-nosotros{
+        width: 320px;
+        height: 320px;  
+        padding: 0;
+        margin: 0;
+        
+    } 
+    .main-contenido .main-contenido-titulo{
+        font-size: 40px;
+    }
+    .main-contenido p{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 420px){
+    iframe{
+        display: none;
+    }
+    .contacto .ubicacion{
+        display: none;
+    }
+    .grid-contenedor img{
+        width: 100vw;
+    }
+
+}
