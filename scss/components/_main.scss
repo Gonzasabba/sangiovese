@@ -1,3 +1,4 @@
+@import "../base/variables";
 
         .carousel-item{            
                 img{
@@ -10,12 +11,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Montserrat';    
+    font-family: $font-site;    
     font-weight: 600;
     text-align: center;
     padding: 8px;
     color: white;    
-    background-color: #736759;
+    background-color: nth($colores, 2);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -31,17 +32,15 @@
     }
 }
 .nosotros{
-    display: flex;
+    @include flex (flex, center, center);
     height: 100vh;    
-    background-color: #736759;
-    justify-content: center;
-    align-items: center;
+    background-color:nth($colores, 2);
     flex-wrap: wrap;
     .texto-nosotros{
         justify-content: center;
         align-items: center;
         font-size: 20px;
-        font-family: 'Montserrat';
+        font-family: $font-site;
         padding: 20px;    
         margin: 10px;
         color: white;    
@@ -64,22 +63,20 @@ section{
     div{
         h2{
             font-size: 50px;
-            font-family: 'Montserrat';
+            font-family: $font-site;
             color: white ;   
             padding: 30px;   
             text-align: center;
-            background-color: #736759;
+            background-color: nth($colores, 2);
             margin: 0px;
         }
     }
     .menu{
-        display: flex;         
-        justify-content: center;
-        align-items: flex-start;
+        @include flex (flex, center, flex-start);
         height: 100%;
         padding: 15px;    
-        font-family: 'Montserrat'; 
-        background-color: #736759;
+        font-family: $font-site; 
+        background-color: nth($colores, 2);
         flex-wrap: wrap;
         .pasta-fresca{
             display: flex;
@@ -218,11 +215,9 @@ section{
     }
 }
 .contacto{
-    display: flex;
-    justify-content: space-evenly;   
-    height: 100vh; 
-    align-items: center;
-    background-color: #736759;
+    @include flex (flex, space-evenly, center);  
+    height: 100vh;
+    background-color: nth($colores, 2);
     flex-wrap: wrap;
     .form{
         display: flex;
@@ -231,13 +226,13 @@ section{
         border: 3px solid white;
         padding: 15px;
         h3{
-            font-family: 'Montserrat' ;
+            font-family: $font-site;
             font-size: 20px;
             margin: 20px;
             color: white;
         }
         .form-contenido{
-            font-family: 'Montserrat'; 
+            font-family: $font-site; 
             .form-nombre{
                 padding: 7px;   
                 .form-input{
@@ -245,7 +240,7 @@ section{
                     padding: 7px;
                     border: none;
                     border-bottom: 3px solid green;
-                    font-family: 'Montserrat';
+                    font-family: $font-site;
                     &:focus{
                         outline: none;
                         background-color: rgb(180, 177, 177);
@@ -259,7 +254,7 @@ section{
                     padding: 7px;
                     border: none;
                     border-bottom: 3px solid green;
-                    font-family: 'Montserrat';
+                    font-family: $font-site;
                     &:focus{
                         outline: none;
                         background-color: rgb(180, 177, 177);
@@ -273,7 +268,7 @@ section{
                     padding: 7px;
                     border: none;
                     border-bottom: 3px solid green;
-                    font-family: 'Montserrat';
+                    font-family: $font-site;
                     &:focus{
                         outline: none;
                         background-color: rgb(180, 177, 177);
@@ -294,7 +289,7 @@ section{
                     padding: 7px;
                     border: none;
                     border-bottom: 3px solid green;
-                    font-family: 'Montserrat';
+                    font-family: $font-site;
                     &:focus{
                         outline: none;
                         background-color: rgb(180, 177, 177);
@@ -307,7 +302,7 @@ section{
                     padding: 7px;
                     border: none;
                     border-bottom: 3px solid green;
-                    font-family: 'Montserrat';
+                    font-family: $font-site;
                     &:focus{
                         outline: none;
                         background-color: rgb(180, 177, 177);
@@ -326,7 +321,7 @@ section{
         text-align: center;   
         color: white;  
         h3{
-            font-family: 'Montserrat' ;
+            font-family: $font-site;
             font-size: 30px;
             margin: 20px;
             color: white;

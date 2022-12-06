@@ -1,12 +1,12 @@
+@import "../base/variables";
+
 header{
-    background-color: #cbaa8b; 
+    background-color: nth($colores, 1); 
     width: 100%;
     nav{
         .header{
-            display: flex;       
-            font-family: 'Montserrat', sans-serif;    
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, center, center);
+            font-family: $font-site, sans-serif;
             font-size: 20px;        
             padding: 5px;   
             text-decoration: none;

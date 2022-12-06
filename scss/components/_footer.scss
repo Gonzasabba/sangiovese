@@ -1,10 +1,10 @@
+@import "../base/variables";
+
 .footer-contenido{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex (flex, space-around, center);    
     height: auto;
     width: 100%;
-    background-color: #463926;
+    background-color: nth($colores, 3);
     flex-wrap: wrap;    
     flex-direction: row;
     padding: 10px;
@@ -24,13 +24,8 @@
             padding-left: 5px;    
         }
     .telefono{
-        text-align: center;
-        font-family: 'Montserrat';           
-        font-size: 15px;
-        padding: 5px;
-        margin: 2px;     
-        border: 2px solid white;  
-        color: white ;
+        @extend %cajas-footer;
+        font-family: $font-site;
         h3{
             font-size: 18px;
         }
@@ -39,13 +34,8 @@
         }
     }
     .direccion{
-        text-align: center;
-        font-family: 'Montserrat';         
-        font-size: 15px;
-        padding: 5px;
-        margin: 2px;   
-        border: 2px solid white;  
-        color: white;
+        @extend %cajas-footer;
+        font-family: $font-site;
         h3{
             font-size: 18px;
         }
@@ -54,13 +44,8 @@
         }
     }
     .horarios{
-        text-align: center;
-        font-family: 'Montserrat';      
-        font-size: 15px;
-        padding: 5px;
-        margin: 2px;     
-        border: 2px solid white;  
-        color: white ;
+        @extend %cajas-footer;
+        font-family: $font-site;
         h3{
             font-size: 18px;
         }

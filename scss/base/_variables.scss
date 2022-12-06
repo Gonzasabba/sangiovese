@@ -1,1 +1,25 @@
 
+
+$font-site:'Montserrat';
+
+$colores:
+#cbaa8b,
+#736759,
+#463926;
+
+
+@mixin flex ($flex, $justify, $align){
+display: $flex;
+justify-content: $justify;
+align-items: $align;
+}
+
+%cajas-footer{
+    text-align: center;    
+    font-size: 15px;
+    padding: 5px;
+    margin: 2px; 
+    border: 3px solid white;
+    color: white;   
+}
+
